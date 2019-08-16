@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <header className={headerStyles.header}>
       <p>
-        <img src={idea} alit="idea icon" className={headerStyles.ideaLogo} />
+        <img src={idea} alt="Random Thoughts" className={headerStyles.ideaLogo} />
         <Link to="/" className={headerStyles.title}>
           {data.site.siteMetadata.title}
         </Link>

@@ -53,7 +53,7 @@ const getSchemaOrgJSONLD = ({
         description,
         author: {
           '@type': 'Person',
-          name: 'Khalil Stemmler',
+          name: 'Ashutosh Mani Tripathi',
         },
         publisher: {
           '@type': 'Organization',
@@ -62,7 +62,7 @@ const getSchemaOrgJSONLD = ({
           name: 'Ashutosh',
         },
         mainEntityOfPage: {
-          '@type': 'WebSite',
+          '@type': 'Ashutosh Mani Tripathi',
           '@id': config.url,
         },
         datePublished,
@@ -103,7 +103,7 @@ const Head = props => {
 
   return (
     <Helmet >
-      <meta name="description" content={description} />
+      <meta name="description" content={`Author:  Ashutosh, Illustrator: Random Thoghts, Lenght: 1 page ${description}`} />
       <meta name="image" content={image} />
       <title>{props.title} | {data.site.siteMetadata.title}</title>
 
@@ -116,7 +116,7 @@ const Head = props => {
       <meta property="og:url" content={url} />
       {props.isBlogPost ? <meta property="og:type" content="article" /> : null}
       <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
+      <meta property="og:description" content={`Author:  Ashutosh, Illustrator: Random Thoghts, Lenght: 1 page ${description}`} />
       <meta property="og:image" content={image} />
 
       {/* Twitter Card tags */}
