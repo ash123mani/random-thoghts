@@ -15,6 +15,7 @@ export const query = graphql`
         json
       }
       tags
+      excerpt
     }
   }
 `
@@ -34,20 +35,23 @@ const Blog = props => {
     },
   }
 
+  const { title, publishedDate, excerpt, slug } = props.data.contentfulBlogPost;
+  const post = Object.assign({}, title, publishedDate, excerpt, slug)
+
   return (
     <Layout pageName="template">
       <div className={blogTemplateStyles.blogTemplate} id="blogTemp">
-        <Head title={props.data.contentfulBlogPost.title} />
+        <Head title={props.data.contentfulBlogPost.title} postData={post} isBlogPost="true" />
         {console.log('edge is !!!  !!!', props.data.contentfulBlogPost)}
         <div className={blogTemplateStyles.top}>
           <h1>{props.data.contentfulBlogPost.title}</h1>
           <p>{props.data.contentfulBlogPost.publishedDate}</p>
         </div>
         <div className={blogTemplateStyles.content}>
-            {documentToReactComponents(
-              props.data.contentfulBlogPost.body.json,
-              options
-            )}
+          {documentToReactComponents(
+            props.data.contentfulBlogPost.body.json,
+            options
+          )}
         </div>
         <div className={blogTemplateStyles.tags}>
           <p>Author: Ashutosh</p>
