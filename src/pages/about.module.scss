@@ -1,0 +1,23 @@
+.about-page {
+  margin: auto auto;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  box-shadow: 1px 1px 2px 3px #272424;
+
+  a {
+    padding: 0 10px;
+    color: #ff9801;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    transition: all ease-in-out 0.2s ;
+    color: #ab8348;
+  }
+}

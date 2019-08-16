@@ -4,6 +4,8 @@
 
   display: grid;
   grid-gap: 20px;
+  grid-template-columns: 70%;
+  justify-content: center;
 
   li:hover {
     a {
@@ -27,27 +29,23 @@
     width: 50%;
     height: 50%;
     position: absolute;
-    // border: 0px solid #88a793;
     transition: all 1s;
     z-index: -1;
   }
   &:after {
     top: -1px;
     left: -1px;
-    border-top: 1px solid #88a793;
-    border-left: 1px solid #88a793;
   }
   &:before {
     bottom: -1px;
     right: -1px;
-    border-bottom: 1px solid #88a793;
-    border-right: 1px solid #88a793;
   }
   &:hover {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     background: rgba(0, 0, 0, 0.5);
     color: white;
+    transition: all ease-in 0.4s;
 
     &:before,
     &:after {
@@ -59,7 +57,7 @@
 
 .post {
   margin: 1rem 0;
-  background-color: #28d0ab12;
+  background-color: #04040412;
 
   a {
     text-decoration: none;
@@ -72,8 +70,8 @@
   h2 {
     margin-bottom: 0;
     font-weight: lighter;
-    border-bottom: 1px solid #99f7ab4d;
-    width: max-content;
+    // border-bottom: 1px solid #99f7ab4d;
+    // width: max-content;
   }
 
   p {
