@@ -101,3 +101,10 @@ nav {
   justify-content: center !important;
   flex-wrap: wrap;
 }
+
+
+@media screen and (max-width: 900px) {
+  .nav-lists li {
+    margin-bottom: 10px;
+  }
+}
