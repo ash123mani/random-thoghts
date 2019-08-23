@@ -7,22 +7,26 @@
 .top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.1rem;
   align-items: center;
   border-radius: 3px;
   padding: 15px;
   font-size: 20px;
+  border: 1px solid #694e26;
+  background: #1d1a1a4d;
 
   h1 {
     margin-bottom: 0;
     font-weight: 400;
+    color: #ff9801;
+    font-size: 2rem;
   }
   p {
     margin-bottom: 0;
     align-self: center;
     font-size: 16px;
     font-weight: 400;
-
+    display: none;
+    border: 1px solid #694e26;
   }
 }
 
@@ -31,6 +35,9 @@
   padding: 2rem 4rem;
   font-weight: lighter;
   box-shadow: 2px 2px 355px 12px #2d2b2b;
+  border: 1px solid #694e26;
+  background: #1d1a1a4d;
+
 
   p{
     line-height: 25px;
@@ -75,4 +82,20 @@
 
 .content a b {
   color: #598fe6;
+}
+
+@media screen and (max-width: 900px) {
+  .blog-template{
+    padding: unset;
+  }
+
+  .top {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .content {
+    padding: 10px 30px;
+  }
 }

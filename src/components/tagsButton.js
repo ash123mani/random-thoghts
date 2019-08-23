@@ -19,17 +19,12 @@ const tags = [
 ]
 
 const TagsButton = props => {
-  const onLinkClick = event => {
-    console.log('event ::is', event.target.id)
-    props.onFilterSelect(event.target.id)
-  }
 
   const renderLink = (tagDetail, index) => {
     return (
       <li key={index}>
-      <img src={tagDetail.logoUrl} alt={tagDetail.topicName} />
+        <img src={tagDetail.logoUrl} alt={tagDetail.topicName} />
         <Link
-          onClick={onLinkClick}
           to="/blog"
           className={tagsButtonStyle.navItem}
           activeClassName={tagsButtonStyle.activeNavItem}
@@ -47,7 +42,7 @@ const TagsButton = props => {
         <ul
           className={`${tagsButtonStyle.navLists} ${
             tagsButtonStyle[`${props.class}`]
-          }`}
+            }`}
         >
           {tags.map((tag, index) => {
             return renderLink(tag, index)

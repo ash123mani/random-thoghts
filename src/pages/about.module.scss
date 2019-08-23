@@ -21,3 +21,13 @@
     color: #ab8348;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .about-page h1 {
+    font-size: 1.5rem
+  }
+
+  .about-page h2 {
+    font-size: 1.2rem
+  }
+}

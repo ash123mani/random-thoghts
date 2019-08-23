@@ -46,7 +46,7 @@ nav {
     width: 50%;
     height: 50%;
     position: absolute;
-    border: 0px solid #88a793;
+    border: 0px solid #da9226;
     transition: all 1s;
     z-index: -1;
     // display: none;
@@ -54,14 +54,14 @@ nav {
   &:after {
     top: -1px;
     left: -1px;
-    border-top: 1px solid #88a793;
-    border-left: 1px solid #88a793;
+    border-top: 1px solid #da9226;
+    border-left: 1px solid #da9226;
   }
   &:before {
     bottom: -1px;
     right: -1px;
-    border-bottom: 1px solid #88a793;
-    border-right: 1px solid #88a793;
+    border-bottom: 1px solid #da9226;
+    border-right: 1px solid #da9226;
   }
   &:hover {
     border-top-right-radius: 0px;
@@ -76,9 +76,9 @@ nav {
       // display: none;
     }
 
-    .nav-lists li img {
-      border-left: 1px solid green;
-    }
+    // .nav-lists li img {
+    //   border-left: 1px solid green;
+    // }
   }
 }
 

@@ -16,7 +16,6 @@ const Layout = ({ children, pageName }) => {
   const [filterOption, setFilterOption] = useState("");
 
   const selectedFilterOption = filter => {
-    console.log("button is", filter);
     setFilterOption(filter);
   };
 

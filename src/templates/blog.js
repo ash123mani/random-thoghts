@@ -42,7 +42,6 @@ const Blog = props => {
     <Layout pageName="template">
       <div className={blogTemplateStyles.blogTemplate} id="blogTemp">
         <Head title={props.data.contentfulBlogPost.title} postData={post} isBlogPost="true" />
-        {console.log('edge is !!!  !!!', props.data.contentfulBlogPost)}
         <div className={blogTemplateStyles.top}>
           <h1>{props.data.contentfulBlogPost.title}</h1>
           <p>{props.data.contentfulBlogPost.publishedDate}</p>

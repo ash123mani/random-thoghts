@@ -7,7 +7,6 @@ import blogStyles from './blog.module.scss'
 import Head from '../components/head'
 
 const BlogPage = props => {
-  console.log('Blog page prop@@@@', props)
   const data = useStaticQuery(graphql`
     query {
       allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
@@ -31,7 +30,6 @@ const BlogPage = props => {
     <FilterConsumer>
       {value => (
         <Layout pageName="blogPage">
-          {console.log('value is', value)}
 
           <Head title="Blogs" />
           <div>
