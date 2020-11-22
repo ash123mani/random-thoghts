@@ -1,5 +1,7 @@
 ## My First Blogging website using Gatsby,Contentful as CMS.
 
+https://randomthoughts.netlify.app/
+
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
